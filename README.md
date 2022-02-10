@@ -4,7 +4,19 @@ Small template for structured ExpressJS routing with static and dynamic subdomai
 # Structure
 Each subdomain is running in its own ExpressJS environment that is exported to the app.js application. The routing for these subdomains are then handled by a ExpressJS vhost configuration inside the app.js file. This file structure makes it easy to deploy a structured ExpressJS application with both static and dynamic subdomains, while also allowing connections to the root domain.
 
-# Instructions
+# Installation Instructions
+
+### Requirements:
+- NPM installed.
+- Visual Studio Code (recommended).
+
+1. Clone or download the repository.
+2. Open the folder in Visual Studio Code.
+3. Open a new terminal in Visual Studio Code.
+4. Install dependencies using ```npm install```.
+6. Modify the code to your liking and continue with **Usage Instructions**.
+
+# Usage Instructions
 - Start in development mode: ```npm run dev```
 - Start in production mode: ```npm start```
 
