@@ -7,11 +7,11 @@ const app = express();
 
 // Launch all websites.
 const api = require("./api.js")
-const dynamic = require("./corps.js")
+const dynamic = require("./dynamic.js")
 const main = require("./main.js")
 
 // Domain variable.
-const domainName = "test.com"
+var domainName = "test.com"
 
 // Check if we are running in production or development.
 if (process.platform != "linux") {
