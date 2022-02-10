@@ -6,9 +6,9 @@ const vhost = require("vhost");
 const app = express();
 
 // Launch all websites.
-const api = require("./api.js")
-const dynamic = require("./dynamic.js")
-const main = require("./main.js")
+const api = require("./routes/api.js")
+const dynamic = require("./routes/dynamic.js")
+const main = require("./routes/main.js")
 
 // Domain variable.
 var domainName = "test.com"
