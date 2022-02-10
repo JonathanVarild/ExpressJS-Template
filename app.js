@@ -30,14 +30,15 @@ else {
 
 }
 
+// Mount main website with static subdomain for www.
+app.use(vhost(`${domainName}`, main))
+app.use(vhost(`www.${domainName}`, main))
+
 // Mount api subdomain.
 app.use(vhost(`api.${domainName}`, api))
 
 // Mount dynamic subdomains.
 app.use(vhost(`*.${domainName}`, dynamic))
-
-// Mount main website.
-app.use(vhost(`${domainName}`, main))
 
 // Add route for non-existing routes.
 app.get("*", (req, res) => {
